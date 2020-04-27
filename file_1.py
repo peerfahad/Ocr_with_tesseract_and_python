@@ -13,7 +13,7 @@ adaptive_threshold = cv2.adaptiveThreshold(gray,225,cv2.ADAPTIVE_THRESH_GAUSSIAN
 
 config = "--psm 3"
 
-text = pytesseract.image_to_string(adaptive_threshold,config=config)
+text = pytesseract.image_to_string(adaptive_threshold,config=config,lang="ita")
 
 print(text)
 
